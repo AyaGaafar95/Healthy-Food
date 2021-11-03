@@ -1,0 +1,27 @@
+<!-- the home -->
+<div class="home-container">
+  <header>
+    <div class="head">
+      <h1><i class="fas fa-carrot i"></i> Healthy Food</h1>
+    </div>
+  </header>
+  <video src="videos.mp4" type="video/mp4" autoplay="true" loop="true">
+    <source src="videos.mp4" type="video/mp4" />
+  </video>
+  <table>
+    <tr>
+      <th>name</th>
+      <th>category</th>
+      <th>actions</th>
+    </tr>
+    <tr *ngFor="let food of foods">
+      <td>{{ food.name }}</td>
+      <td>{{ food.category }}</td>
+      <td>
+        <button (click)="goToDetails(food._id)" class="bt1 btn">more</button>
+        <button class="bt2 btn"><i class="fas fa-marker"></i></button>
+        <button class="bt3 btn"><i class="fas fa-trash-alt"></i></button>
+      </td>
+    </tr>
+  </table>
+</div>
