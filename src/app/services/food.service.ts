@@ -10,4 +10,9 @@ export class FoodService {
       'https://immense-sierra-13495.herokuapp.com/api/foods'
     );
   }
+  getFoodById(foodId) {
+    return this.client.get(
+      `https://immense-sierra-13495.herokuapp.com/api/foods/${foodId}`
+    );
+  }
 }
