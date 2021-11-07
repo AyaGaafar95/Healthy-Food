@@ -9,6 +9,7 @@ import { FoodSchema } from '../types';
 })
 export class AllFoodsComponent implements OnInit {
   foods: FoodSchema[] = [];
+  food: FoodSchema;
   constructor(private foodService: FoodService, private router: Router) {}
 
   ngOnInit(): void {
@@ -26,5 +27,8 @@ export class AllFoodsComponent implements OnInit {
   }
   goToDetails(foodId) {
     this.router.navigateByUrl(`/foods/${foodId}`);
+  }
+  addFood() {
+    this.router.navigateByUrl(`foods/add`);
   }
 }

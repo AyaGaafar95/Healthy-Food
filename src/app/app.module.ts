@@ -7,9 +7,10 @@ import { AllFoodsComponent } from './all-foods/all-foods.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodDetailsComponent } from './food-details/food-details.component';
+import { AddfoodComponent } from './addfood/addfood.component';
 
 @NgModule({
-  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent],
+  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent, AddfoodComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
