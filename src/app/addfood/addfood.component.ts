@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { format } from 'path';
+import { FoodService } from '../services/food.service';
 
 @Component({
   selector: 'app-addfood',
@@ -13,7 +15,7 @@ export class AddfoodComponent implements OnInit {
     category: new FormControl('', [Validators.required]),
     picture: new FormControl('', [Validators.required]),
   });
-  constructor() {}
+  constructor(private foodService: FoodService, private router: Router) {}
 
   ngOnInit(): void {}
 }

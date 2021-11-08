@@ -1,1 +1,39 @@
-<p>addfood works!</p>
+<form [formGroup]="healthyFoodForm">
+  <div>
+    <label>Name</label>
+    <input formControlName="name" type="text" />
+    <p
+      *ngIf="
+        healthyFoodForm.controls.name.errors?.required &&
+        healthyFoodForm.controls.name.touched
+      "
+    >
+      You must write a healthyFood name!
+    </p>
+  </div>
+  <div>
+    <label>Category</label>
+    <input formControlName="Category" type="text" />
+    <p
+      *ngIf="
+        healthyFoodForm.controls.Category.errors?.required &&
+        healthyFoodForm.controls.Category.touched
+      "
+    >
+      You must write a healthyFood Category!
+    </p>
+  </div>
+  <div>
+    <label>Image URL</label>
+    <input formControlName="picture" type="text" />
+    <p
+      *ngIf="
+        healthyFoodForm.controls.picture.errors?.required &&
+        healthyFoodForm.controls.picture.touched
+      "
+    >
+      You must post a picture of healthy food!
+    </p>
+  </div>
+  <button [disabled]="healthyFoodForm.invalid">Submit</button>
+</form>
