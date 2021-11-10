@@ -25,6 +25,6 @@ export class FoodDetailsComponent implements OnInit {
     });
   }
 }
-function getFoodById(Id: any) {
-  throw new Error('Function not implemented.');
-}
+// function getFoodById(Id: any) {
+//   throw new Error('Function not implemented.');
+// }

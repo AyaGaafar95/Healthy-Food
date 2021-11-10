@@ -35,8 +35,12 @@
       <td>{{ food.category }}</td>
       <td>
         <button (click)="goToDetails(food._id)" class="bt1 btn">more</button>
-        <button class="bt2 btn"><i class="fas fa-marker"></i></button>
-        <button class="bt3 btn"><i class="fas fa-trash-alt"></i></button>
+        <button (click)="goToEdit(food._id)" class="bt2 btn">
+          <i class="fas fa-marker"></i>
+        </button>
+        <button class="bt3 btn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </td>
     </tr>
   </table>

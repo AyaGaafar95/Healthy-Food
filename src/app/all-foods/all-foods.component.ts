@@ -31,4 +31,7 @@ export class AllFoodsComponent implements OnInit {
   addFood() {
     this.router.navigateByUrl(`foods/add`);
   }
+  goToEdit(foodId) {
+    this.router.navigateByUrl(`/foods/edit/${foodId}`);
+  }
 }

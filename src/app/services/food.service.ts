@@ -15,4 +15,10 @@ export class FoodService {
       `https://immense-sierra-13495.herokuapp.com/api/foods/${foodId}`
     );
   }
+  editFood(foodObj) {
+    return this.client.put(
+      'https://immense-sierra-13495.herokuapp.com/api/foods',
+      foodObj
+    );
+  }
 }
