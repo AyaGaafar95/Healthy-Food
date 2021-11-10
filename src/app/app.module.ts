@@ -8,9 +8,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodDetailsComponent } from './food-details/food-details.component';
 import { AddfoodComponent } from './addfood/addfood.component';
+import { EditfoodComponent } from './editfood/editfood.component';
 
 @NgModule({
-  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent, AddfoodComponent],
+  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent, AddfoodComponent, EditfoodComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
