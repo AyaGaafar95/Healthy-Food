@@ -1,3 +1,66 @@
 <div class="container">
-  <img src="assets/edit.PNG" />
+  <!-- <img src="assets/edit.PNG" /> -->
+  <form [formGroup]="healthyFoodForm">
+    <div>
+      <label>Name</label>
+      <input
+        formControlName="name"
+        type="text"
+        placeholder="write a healthyFood name"
+      />
+      <p
+        class="error"
+        *ngIf="
+          healthyFoodForm.controls.name.errors?.required &&
+          healthyFoodForm.controls.name.touched
+        "
+      >
+        You must write a healthyFood name!
+      </p>
+    </div>
+    <div>
+      <label>Category</label>
+      <input
+        formControlName="category"
+        type="text"
+        placeholder="write a healthyFood Category"
+      />
+      <p
+        class="error"
+        *ngIf="
+          healthyFoodForm.controls.category.errors?.required &&
+          healthyFoodForm.controls.category.touched
+        "
+      >
+        You must write a healthyFood Category!
+      </p>
+    </div>
+    <div>
+      <label>Image <span>URL</span> </label>
+      <input
+        formControlName="picture"
+        type="text"
+        placeholder="post a picture of healthy food"
+      />
+      <p
+        class="error"
+        *ngIf="
+          healthyFoodForm.controls.picture.errors?.required &&
+          healthyFoodForm.controls.picture.touched
+        "
+      >
+        You must post a picture of healthy food!
+      </p>
+    </div>
+    <button [disabled]="healthyFoodForm.invalid">Done</button>
+  </form>
+  <div class="text">
+    <h1 class="grean">eat<img src="assets/fruit.PNG" /> right,</h1>
+    <h1 class="black">feel great</h1>
+    <p class="buttom">
+      Exactly what you<br />
+      need to know!
+      <img class="dish" src="assets/dish.jpg" />
+    </p>
+  </div>
 </div>

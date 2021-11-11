@@ -17,4 +17,12 @@ export class AddfoodComponent implements OnInit {
   constructor(private foodService: FoodService, private router: Router) {}
 
   ngOnInit(): void {}
+  submitFood() {
+    this.foodService.addFood(this.healthyFoodForm.value).subscribe(
+      () => {
+        this.router.navigateByUrl('/');
+      },
+      () => {}
+    );
+  }
 }

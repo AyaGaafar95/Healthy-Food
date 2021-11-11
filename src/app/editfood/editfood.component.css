@@ -1,8 +1,133 @@
 .container {
   height: 100%;
   width: 100%;
-  background-color: #edeedc;
+  /* background-color: #edeedc; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.contain {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+}
+.container-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* #f6f6f6 */
+/* f1faee */
+#head-p {
+  font-size: 25px;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: "Pacifico", cursive;
+  margin-top: auto;
+  text-align: center;
+}
+form {
+  width: 40%;
+  height: 650px;
+  padding-left: 4px;
+  padding: 20px;
+
+  border: 7px solid white;
+  border-radius: 4px;
+  margin-top: 90px;
+  background: linear-gradient(
+    0deg,
+    rgba(233, 228, 228, 0.5),
+    rgba(236, 232, 232, 0.5)
+  );
+  /* url("assets/ananas.jpeg"); */
+  /* url("https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  background-size: cover;
+  border: 2px solid black;
+}
+/* div {
+  margin: 20px;
+} */
+label {
+  display: block;
+  padding: 5px;
+  font-size: 25px;
+  margin: 7px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 22px;
+}
+input {
+  width: 92%;
+  height: 30px;
+  padding: 8px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #f6f6f6;
+  outline: none;
+  margin-bottom: 20px;
+}
+.error {
+  color: #df3737;
+  /* margin-top: 3px; */
+  font-size: 20px;
+}
+button {
+  margin-block: 1.5em;
+  margin-left: 22%;
+  background-color: #3ab54a;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+button:hover {
+  background-color: #5cbf2a;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+span {
+  font-size: 15px;
+  font-weight: bold;
+}
+.text {
+  width: 45%;
+  margin-top: 60px;
+}
+.text > h1 {
+  text-transform: uppercase;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 10rem;
+  line-height: 150px;
+}
+.grean {
+  font-weight: bolder;
+  color: #28b141;
+}
+.black {
+  font-weight: lighter;
+}
+img {
+  max-width: 100px;
+}
+.buttom {
+  font-size: 3rem;
+  line-height: 50px;
+  margin-left: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.dish {
+  border-radius: 50%;
+  margin-left: 100px;
 }

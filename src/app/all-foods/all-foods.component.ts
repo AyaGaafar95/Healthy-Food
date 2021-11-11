@@ -34,4 +34,12 @@ export class AllFoodsComponent implements OnInit {
   goToEdit(foodId) {
     this.router.navigateByUrl(`/foods/edit/${foodId}`);
   }
+  deleteFood(foodId) {
+    this.foodService.deleteFood(foodId).subscribe(
+      () => {
+        this.getTableData();
+      },
+      () => {}
+    );
+  }
 }

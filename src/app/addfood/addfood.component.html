@@ -8,7 +8,7 @@
       <p class="move">Add</p>
       <img class="move img" src="assets/Add.jpg" alt="" />
     </div> -->
-    <form [formGroup]="healthyFoodForm">
+    <form [formGroup]="healthyFoodForm" (ngSubmit)="submitFood()">
       <div>
         <label>Name</label>
         <input
