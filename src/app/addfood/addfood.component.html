@@ -4,10 +4,14 @@
   </p>
   <div class="container-form">
     <!-- moving picture -->
-    <!-- <div class="moving">
-      <p class="move">Add</p>
-      <img class="move img" src="assets/Add.jpg" alt="" />
-    </div> -->
+    <div class="moving">
+      <!-- <p class="move">Add</p> -->
+      <img
+        class="img add-img"
+        src="assets/pics/BetterDontAddWithText.png"
+        alt=""
+      />
+    </div>
     <form [formGroup]="healthyFoodForm" (ngSubmit)="submitFood()">
       <div>
         <label>Name</label>
@@ -64,8 +68,8 @@
     </form>
     <!-- moving picture -->
     <div class="moving">
-      <p class="pmove">don't Add</p>
-      <img calss="img" src="assets/don't Add.jpg" alt="" />
+      <!-- <p class="pmove">don't Add</p> -->
+      <img class="dont-add-img" src="assets/pics/AddWithText.png" alt="" />
     </div>
   </div>
 </div>
