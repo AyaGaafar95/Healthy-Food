@@ -9,9 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FoodDetailsComponent } from './food-details/food-details.component';
 import { AddfoodComponent } from './addfood/addfood.component';
 import { EditfoodComponent } from './editfood/editfood.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent, AddfoodComponent, EditfoodComponent],
+  declarations: [AppComponent, AllFoodsComponent, FoodDetailsComponent, AddfoodComponent, EditfoodComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
