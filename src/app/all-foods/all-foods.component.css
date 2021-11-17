@@ -80,6 +80,10 @@ td {
   border-radius: 50%;
   font-size: 1rem;
 }
+.btn:active {
+  position: relative;
+  top: 2px;
+}
 .bt1 {
   background-color: #232a34;
 }

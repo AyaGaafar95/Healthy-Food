@@ -3,7 +3,7 @@
   height: 100%;
   margin-top: auto;
   display: grid;
-  /* place-items: center; */
+  place-items: center;
   /* position: relative; */
   background: linear-gradient(
       0deg,
@@ -13,6 +13,11 @@
     url("https://images.pexels.com/photos/1320997/pexels-photo-1320997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 
   background-size: cover;
+}
+.header-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 .card {
   margin: auto;
@@ -42,7 +47,13 @@ span {
   text-transform: uppercase;
   font-weight: bold;
   color: #f95641;
+  /* background-color: #e2d6b3;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 5px;
+  margin-right: 0.5em; */
 }
 p {
   padding-left: 0.5em;
+  margin: 0.5em;
 }

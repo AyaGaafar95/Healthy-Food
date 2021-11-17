@@ -1,10 +1,12 @@
 <div class="infocontainer">
-  <app-header></app-header>
+  <div class="header-container">
+    <app-header></app-header>
+  </div>
   <!-- <img class="background" src="img.jpg" /> -->
   <div class="card">
     <img src="{{ requiredFood?.picture }}" alt="" />
     <br />
-    <p><span>name: </span> {{ requiredFood?.name }}</p>
-    <p><span>category: </span> {{ requiredFood?.category }}</p>
+    <p><span>name </span>: {{ requiredFood?.name }}</p>
+    <p><span>category </span>: {{ requiredFood?.category }}</p>
   </div>
 </div>
