@@ -3,18 +3,15 @@
   height: 100%;
   margin-top: auto;
   display: grid;
-  place-items: center;
+  /* place-items: center; */
+  /* position: relative; */
   background: linear-gradient(
       0deg,
       rgba(236, 218, 218, 0.5),
       rgba(236, 218, 218, 0.5)
     ),
     url("https://images.pexels.com/photos/1320997/pexels-photo-1320997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  /* background-image: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background: url("https://www.quotemaster.org/images/e1/e146e853b3dcd24408e9f47eeb73e31e.jpg"); */
-  /* background-image: (
-    "https://images.pexels.com/photos/1320997/pexels-photo-1320997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-  ); */
+
   background-size: cover;
 }
 .card {

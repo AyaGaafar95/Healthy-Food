@@ -48,9 +48,7 @@ form {
   align-items: center;
   border: 2px solid black;
 }
-/* div {
-  margin: 20px;
-} */
+
 form > div {
   width: 90%;
   max-width: 700px;
@@ -62,6 +60,8 @@ label {
   margin: 7px;
   font-family: "Mochiy Pop P One", sans-serif;
   font-size: 22px;
+  font-weight: bold;
+  color: #232a34;
 }
 input {
   width: 100%;
@@ -72,6 +72,9 @@ input {
   background-color: #f6f6f6;
   outline: none;
   margin-bottom: 20px;
+}
+input:focus {
+  outline: 2px solid #232a34;
 }
 .error {
   color: #df3737;
@@ -126,6 +129,7 @@ span {
 }
 .black {
   font-weight: lighter;
+  color: #232a34;
 }
 img {
   max-width: 100px;

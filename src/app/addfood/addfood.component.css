@@ -54,6 +54,7 @@ label {
   font-size: 25px;
   font-family: "Mochiy Pop P One", sans-serif;
   margin: 7px;
+  color: #232a34;
 }
 
 input {
@@ -66,6 +67,10 @@ input {
   outline: none;
   margin-bottom: 20px;
 }
+input:focus {
+  outline: 2px solid #232a34;
+}
+
 .error {
   color: #df3737;
   margin-top: 5px;
