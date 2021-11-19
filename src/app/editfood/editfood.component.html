@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <!-- <img src="assets/edit.PNG" /> -->
-  <form [formGroup]="healthyFoodForm">
+  <form [formGroup]="healthyFoodForm" (ngSubmit)="submitedForm()">
     <div>
       <label>Name</label>
       <input
