@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { FoodSchema } from '../types';
 @Injectable({
   providedIn: 'root',
 })
@@ -16,8 +18,8 @@ export class FoodService {
       foodObj
     );
   }
-  getFoodById(foodId) {
-    return this.client.get(
+  getFoodById(foodId): Observable<FoodSchema> {
+    return this.client.get<FoodSchema>(
       `https://immense-sierra-13495.herokuapp.com/api/foods/${foodId}`
     );
   }

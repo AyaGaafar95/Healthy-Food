@@ -119,6 +119,7 @@ button:active {
   font-size: 25px;
   position: relative;
   margin-top: 50px;
+  margin-bottom: 145px;
 }
 
 img {
@@ -147,11 +148,11 @@ img {
     transform: translateY(-100%);
   }
 }
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .moving {
     display: none;
   }
   form {
     width: 90%;
   }
-}
+} */
