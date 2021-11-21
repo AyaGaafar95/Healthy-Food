@@ -69,7 +69,7 @@ input {
   font-size: 20px;
   background-color: #f6f6f6;
   outline: none;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 input:focus {
   outline: 2px solid #232a34;
@@ -78,6 +78,7 @@ input:focus {
 .error {
   color: #df3737;
   margin-top: 5px;
+  font-size: 0.8em;
 }
 button {
   display: block;
@@ -143,12 +144,14 @@ img {
     transform: translateY(-100%);
   }
 }
+
 @media (max-width: 1024px) {
   .moving {
     display: none;
   }
   form {
     width: 90%;
+    margin-top: auto;
   }
 }
 @media (max-width: 450px) {
