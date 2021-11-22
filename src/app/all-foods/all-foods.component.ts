@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FoodService } from '../services/food.service';
 import { FoodSchema } from '../types';
@@ -11,9 +11,16 @@ export class AllFoodsComponent implements OnInit {
   foods: FoodSchema[] = [];
   food: FoodSchema;
   loading = true;
-  constructor(private foodService: FoodService, private router: Router) {}
+  constructor(
+    private foodService: FoodService,
+    private router: Router,
+    private elementRef: ElementRef
+  ) {}
 
   ngOnInit(): void {
+    const videoElement = this.elementRef.nativeElement.querySelector('video');
+    videoElement.muted = true;
+    videoElement.play();
     // this.foodService.
     this.getTableData();
   }
