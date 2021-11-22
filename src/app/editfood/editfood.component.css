@@ -134,7 +134,43 @@ img {
 .text-sm {
   display: none;
 }
-@media (max-width: 450px) {
+@media (max-width: 1024px) {
+  form {
+    width: 50%;
+    margin-top: 190px;
+    /* height: auto; */
+  }
+  .text {
+    width: 30%;
+    margin-top: 190px;
+  }
+  .text > h1 {
+    text-transform: uppercase;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 5rem;
+    line-height: 90px;
+  }
+  .grean {
+    font-weight: bolder;
+    color: #28b141;
+  }
+  .black {
+    font-weight: lighter;
+    color: #232a34;
+  }
+  .buttom {
+    font-size: 1rem;
+    line-height: 20px;
+    margin-left: 20px;
+  }
+  img {
+    width: 50px;
+  }
+  .dish {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 750px) {
   .text-sm {
     display: block;
     order: 1;
@@ -224,41 +260,5 @@ img {
   .error {
     font-size: 0.8em;
     margin-top: 0;
-  }
-}
-@media (max-width: 1024px) {
-  form {
-    width: 50%;
-    margin-top: 190px;
-    /* height: auto; */
-  }
-  .text {
-    width: 30%;
-    margin-top: 190px;
-  }
-  .text > h1 {
-    text-transform: uppercase;
-    font-family: "Mochiy Pop P One", sans-serif;
-    font-size: 5rem;
-    line-height: 90px;
-  }
-  .grean {
-    font-weight: bolder;
-    color: #28b141;
-  }
-  .black {
-    font-weight: lighter;
-    color: #232a34;
-  }
-  .buttom {
-    font-size: 1rem;
-    line-height: 20px;
-    margin-left: 20px;
-  }
-  img {
-    width: 50px;
-  }
-  .dish {
-    margin-left: 50px;
   }
 }
