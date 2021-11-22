@@ -10,15 +10,18 @@ import { FoodSchema } from '../types';
 export class AllFoodsComponent implements OnInit {
   foods: FoodSchema[] = [];
   food: FoodSchema;
+  loading = true;
   constructor(private foodService: FoodService, private router: Router) {}
 
   ngOnInit(): void {
+    // this.foodService.
     this.getTableData();
   }
   getTableData() {
     this.foodService.getAllFoods().subscribe(
       (data: FoodSchema[]) => {
         this.foods = data;
+        this.loading = false;
       },
       (err) => {
         console.log(err);

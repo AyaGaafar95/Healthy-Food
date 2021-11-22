@@ -20,6 +20,14 @@
         >healthyfood
       </p>
     </div>
+    <div class="lds-ellipsis loading" *ngIf="loading">
+      <span class="load">loading ...</span>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- <div class="loading" *ngIf="loading">loading </div> -->
     <table>
       <tr>
         <th>name</th>
