@@ -28,6 +28,10 @@ body {
   padding-top: 0%;
 }
 /* lading style */
+.loading-container {
+  display: flex;
+  align-items: center;
+}
 .load {
   font-size: 2em;
   font-weight: bold;
@@ -185,9 +189,3 @@ td {
     align-items: center;
   }
 }
-
-/* i {
-  font-size: 1.5rem;
-} */
-/* #f95641 */
-/* #f0a500 */
