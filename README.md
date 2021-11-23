@@ -2,26 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
-## Development server
+This is an HTML5 & CSS3 & typescript "Angular"  project . It’s about creating a responsive HealthyFood project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can take a look at the deployed link here:https://healthy-food-jet.vercel.app/
 
-## Code scaffolding
+Or you can take a look at these sample images:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![2p](https://user-images.githubusercontent.com/72417447/143001774-ca82a5ba-594d-45bc-87d6-8387ef11a60f.PNG)
 
-## Build
+![1p](https://user-images.githubusercontent.com/72417447/143002021-2dc7d688-95b4-4022-8d2b-57e9bb680766.PNG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
