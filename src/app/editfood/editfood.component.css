@@ -170,7 +170,8 @@ img {
   .text-sm {
     display: block;
     order: 1;
-    margin: auto;
+    margin-inline: auto;
+    padding-block: 2em;
   }
   .text-sm > h1 {
     text-align: center;
@@ -199,6 +200,7 @@ img {
   }
   .container {
     flex-direction: column;
+    justify-content: flex-start;
   }
   .text {
     display: none;
