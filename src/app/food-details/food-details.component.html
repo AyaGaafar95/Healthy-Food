@@ -3,6 +3,9 @@
     <app-header></app-header>
   </div>
   <!-- <img class="background" src="img.jpg" /> -->
+  <div *ngIf="loading">
+    <div class="lds-heart"><div></div></div>
+  </div>
   <div class="card">
     <img src="{{ requiredFood?.picture }}" alt="" />
     <br />

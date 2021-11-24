@@ -9,6 +9,7 @@ import { FoodSchema } from '../types';
   styleUrls: ['./food-details.component.css'],
 })
 export class FoodDetailsComponent implements OnInit {
+  loading = true;
   requiredFood: FoodSchema;
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -21,6 +22,7 @@ export class FoodDetailsComponent implements OnInit {
         .getFoodById(data.params.Id)
         .subscribe((value: FoodSchema) => {
           this.requiredFood = value;
+          this.loading = false;
         });
     });
   }
