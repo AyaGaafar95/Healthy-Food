@@ -63,6 +63,15 @@
         >
           You must post a picture of healthy food!
         </p>
+        <p
+          class="error"
+          *ngIf="
+            healthyFoodForm.controls.picture.errors?.pattern &&
+            healthyFoodForm.controls.picture.touched
+          "
+        >
+          this not a url!
+        </p>
       </div>
       <button [disabled]="healthyFoodForm.invalid">Submit</button>
     </form>

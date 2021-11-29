@@ -12,7 +12,12 @@ export class AddfoodComponent implements OnInit {
   healthyFoodForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     category: new FormControl('', [Validators.required]),
-    picture: new FormControl('', [Validators.required]),
+    picture: new FormControl('', [
+      Validators.required,
+      Validators.pattern(
+        /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+      ),
+    ]),
   });
   constructor(private foodService: FoodService, private router: Router) {}
 
