@@ -9,6 +9,7 @@ import { FoodService } from '../services/food.service';
   styleUrls: ['./addfood.component.css'],
 })
 export class AddfoodComponent implements OnInit {
+  loading = false;
   healthyFoodForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     category: new FormControl('', [Validators.required]),
@@ -29,5 +30,8 @@ export class AddfoodComponent implements OnInit {
       },
       () => {}
     );
+  }
+  Save(): any {
+    this.loading = true;
   }
 }

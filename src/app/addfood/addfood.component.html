@@ -73,7 +73,32 @@
           this is not a url!
         </p>
       </div>
-      <button [disabled]="healthyFoodForm.invalid">Submit</button>
+      <button (click)="Save()" [disabled]="healthyFoodForm.invalid">
+        Submit
+        <div class="lds-spinner" *ngIf="loading && healthyFoodForm.valid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
+      <!-- <div class="loading-container" *ngIf="loading && healthyFoodForm.valid">
+        <span class="load">loading</span>
+        <div class="lds-ellipsis loading">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div> -->
     </form>
     <!-- moving picture -->
     <div class="moving">
