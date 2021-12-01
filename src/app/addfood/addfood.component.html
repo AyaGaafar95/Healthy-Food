@@ -73,8 +73,11 @@
           this is not a url!
         </p>
       </div>
-      <button (click)="Save()" [disabled]="healthyFoodForm.invalid">
-        Submit
+      <button
+        [ngClass]="{ 'btn-load': loading }"
+        (click)="Save()"
+        [disabled]="healthyFoodForm.invalid"
+      >
         <div class="lds-spinner" *ngIf="loading && healthyFoodForm.valid">
           <div></div>
           <div></div>
@@ -89,16 +92,8 @@
           <div></div>
           <div></div>
         </div>
+        <span [ngClass]="{ 'btn-text-loading': loading }">Submit</span>
       </button>
-      <!-- <div class="loading-container" *ngIf="loading && healthyFoodForm.valid">
-        <span class="load">loading</span>
-        <div class="lds-ellipsis loading">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div> -->
     </form>
     <!-- moving picture -->
     <div class="moving">
