@@ -8,7 +8,8 @@ You can take a look at the deployed link here:https://healthy-food-jet.vercel.ap
 
 Or you can take a look at these sample images:
 
-![2p](https://user-images.githubusercontent.com/72417447/143001774-ca82a5ba-594d-45bc-87d6-8387ef11a60f.PNG)
+![image](https://user-images.githubusercontent.com/72417447/144273466-3acebbfc-be0d-4a22-be6b-08a3de9b75da.png)
 
-![1p](https://user-images.githubusercontent.com/72417447/143002021-2dc7d688-95b4-4022-8d2b-57e9bb680766.PNG)
+![one](https://user-images.githubusercontent.com/72417447/144273684-07959ee0-9e63-4443-aa2c-fc032d224146.PNG)
+
 
