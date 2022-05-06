@@ -3,6 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 This is an HTML5 & CSS3 & typescript "Angular"  project . It’s about creating a responsive HealthyFood project.
+It is a complete project about Crudoperation. The user can delete thefood, add the food, modify it, and
+read more details about it
 
 You can take a look at the deployed link here:https://healthy-food-jet.vercel.app/
 
